@@ -13,10 +13,7 @@ var (
 	logLevel = flag.String("log.level", "info", "Logging level (one of debug, info, warn, error, crit)")
 )
 
-func init() {
-}
-
-func setUpLogging(timefmt string, doFlagParse bool) error {
+func SetUpLogging(timefmt string, doFlagParse bool) error {
 	if doFlagParse {
 		flag.Parse()
 	}
