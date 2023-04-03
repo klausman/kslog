@@ -17,10 +17,7 @@ func SetUpLogging(timefmt string, doFlagParse bool) error {
 	if doFlagParse {
 		flag.Parse()
 	}
-	fmt15.TimeFmt = "15:04:05.000"
-	if timefmt != "" {
-		fmt15.TimeFmt = timefmt
-	}
+	fmt15.TimeFmt = timefmt
 	logLvl, err := log.LvlFromString(*logLevel)
 	if err != nil {
 		return fmt.Errorf("cannot parse log level %s: %s", *logLevel, err)
