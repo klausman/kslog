@@ -1,4 +1,4 @@
-module github.com/klausman/slog
+module github.com/klausman/kslog
 
 go 1.16
 
